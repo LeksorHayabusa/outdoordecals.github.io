@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!-- <style type="text/css" scr="css/index.css"> 
+		body{
+			max-width: 950px;
+			width: 100%;
+			min-width: 375px;
+			margin:0 auto;
+			padding:0;
+			position: relative;
+		}
+		.padding{padding:0 25px;}
+		.clearfix{
+            max-width: 950px;
+			width: 100%;
+			min-width: 375px;
+            margin:0 auto;	
+        }
+		.clearfix:after{
+			content: "";
+			clear: both;
+			display: block;
+		}		
+		.fixed-background{
+			max-width: 950px;
+			width: 100%;
+			height: 400px;
+			min-height: 100px;
+			background-size: 100%;
+			background:url("http://www.mediafire.com/convkey/dedb/wwwkq1um6pmmwsczg.jpg") no-repeat;
+		}
+		.gradient{
+			width: 50%;
+			min-width: 300px;
+			height: 100%;
+			background: linear-gradient(to left,rgba(256,256,256,0), rgba(256,256,256,.90),rgba(256,256,256,1));
+		}
+		.promo{				
+			width: 60%;
+			height: 50px;
+			position:absolute;
+			right: 0;
+			top:50px;
+		}
+		.promo .promo-text{
+			width:166px;
+			height: 35px;
+			font-size: 120%;
+			font-family: 'Racing Sans One';
+			color:#fff;
+			border-radius: 6px;
+			line-height: 1.6em;
+			text-align: center;
+			float:right;
+			display: inline-block;
+		}
+		.promo .promo-text:nth-child(1){
+			margin-bottom: 10%;
+			margin-right:10px;
+		}
+		.promo .promo-text:nth-child(2){
+			margin-bottom: 10%;
+			margin-right:10px;
+		}
+		.promo .promo-text:nth-child(3){
+			margin-bottom: 10%;
+			margin-right:10px;
+		}
+		
+		.note-text{
+			font-size: 70%;
+		}
+		.color{
+			background:#FA4c27;
+		}
+		.content-width{
+			max-width: 950px;
+			width: 100%;
+			min-width: 300px;
+		}
+		.content{
+			text-align: left;
+			font-family: 'Glegoo', serif;
+			font-size: 80%;
+			color:#656565;
+			text-align: justify;
+			margin-left:0px;
+			padding: 15px 0px;
+			background: white;
+			position: relative;
+
+		}
+		.text-indent,.content-7 ul,.content-6 p, .content-2 .text-pad,.content-3 li, .samples p, .content-2 p{
+			text-indent: 25px;
+		}
+		header, footer{
+			height: 50px;
+			max-width: 950px;
+			width: 100%;
+			min-width: 200px;
+			background-color: #27272a;
+			z-index: 1000;
+			position: fixed;
+			top:0;
+			left: auto;
+			margin:0;
+			padding: 0;
+			text-align: center;
+		}
+		header h1, footer h1{
+			color:#fff;
+			line-height: 200%;
+			margin:0;
+			display: inline-block;
+		}
+		header h1{
+			margin: 0px;
+			padding: 0;
+		}
+		header .center_logo{
+			float: left;
+			margin-left: 25%;
+		}
+		header .logo-ico{
+			width: 50px;
+			height: 50px;
+			background-size: 600%;
+			overflow: hidden;
+			background-position: -10px -10px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right:0px;
+			margin-top:4px;
+		}
+		header .drop-down-list_wrapper{
+			margin-top:auto;
+			margin-left: 50px;
+			float: left;
+			display: inline-block;
+			width: 100px;
+			background-color: #27272a;
+		}
+		header .drop-down-list_wrapper:hover{
+			background-color: #27272a;
+			height: auto;
+			cursor:pointer;
+		}
+		header .drop-down-list_wrapper p{
+			font-family: 'Glegoo', serif;
+			font-size: 13px;
+			color: #fff;
+			width: 100%;
+			display: block;
+		}
+		header ul, footer ul{
+			list-style:none;
+			display: none;
+		}
+		header .drop-down-list_wrapper:hover ul{
+			display: block;
+			cursor:pointer;
+		}
+		header .drop-down-list_lang{
+			background-color: #27272a;
+			padding: 5px 7px;
+			width: 20px;
+			text-align: center;
+			display: block;
+		}
+		header .drop-down-list_lang:hover{
+			background-color: #274cfa;
+		}
+		header .drop-down-list_lang a, footer .contacts-list_contacts a, footer a, footer p{
+			text-decoration: none;
+			font-family: 'Glegoo', serif;
+			font-size: 13px;
+			color:#fff;
+		}
+		footer{
+			position: relative;
+			height: auto;
+		}
+		footer i{
+			vertical-align: middle;
+		}
+		footer .contacts-list_contacts{
+
+		}
+		footer .copy-right{
+			font-family: 'Glegoo', serif;
+			font-size: 10px;
+			color:#f2f2f2;
+			float: right;
+			position: absolute;
+			right:10px;
+			top:5px;
+			line-height: 100%;
+		}
+		footer .contacts-main ul{
+			display: block;
+		}
+		h1{
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 140%;
+			color:#656565;
+			padding: 0 40px;
+		}
+		.content-1{
+			height: 400px;
+			min-height: 100px;
+			position: relative;
+			margin-top: 50px;
+			
+		}
+		.logo-ico, .content-1 .logo-od, .sample,.content-4 .ship:before, .content-4 .pay:before,.content-4 .prod:before,.content-4  .paypal, .logo-DHL, .content-5 .promo-steps .pic{
+			background:url('http://www.mediafire.com/convkey/9969/r9avu5namdjdkz2zg.jpg') no-repeat;		
+			text-indent: -9999px;
+			text-align: left;
+		}
+		.content-1 .logo-od{
+			background-position: -30px -30px;
+			width:100px;
+			height:111px;
+			float:left;
+			margin-top:30px;
+			margin-left: 20px;
+			clear:both;
+		}
+		.content-1 .head-note{
+			font-family: 'Glegoo', serif;
+			font-size: 12pt;
+			color: #656565;
+			text-align: justify;
+			line-height: 1.3em;
+			width:200px;
+			display: block;
+			float: left;
+			margin-top: 130px;
+			margin-left:25px;
+			clear:both;
+		}
+		.content-2 .text-pad .b1{
+			font-size: 14pt;
+			padding: 0;
+			text-transform: capitalize;
+		}
+		.gallery{
+			overflow-x: auto;
+			overflow-y: hidden;
+			white-space: nowrap;
+		}
+		.content-11 .img{
+			background:#fff url('http://www.mediafire.com/convkey/85ed/9nqajwy3cdpzn6izg.jpg') no-repeat;
+			text-indent: -9999px;
+			height: 150px;
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 6px;
+		}
+
+		.content-11 .img:nth-child(1){
+			background-position: 0 0;
+			width: 225px;
+			margin-left: 0;
+		}
+		.content-11 .img:nth-child(2){
+			background-position: -255px 0;
+			width: 267px;
+		}
+		.content-11 .img:nth-child(3){
+			background-position:-553px 0;
+			width: 236px;
+		}
+		.content-11 .img:nth-child(4){
+			background-position:-818px 0;
+			width: 225px;
+		}
+		.content-11 .img:nth-child(5){
+			background-position: -1073px  0;
+			width: 209px;
+		}
+		.samples{			
+			background:#f2f2f2;
+		}
+		.sample{
+			width: 300px;
+			height: 200px;
+			display:inline-block;}
+		
+		.sample1{
+			background-position: -190px -147px;
+		}
+		.sample2{
+			background-position: -560px -30px;
+		}
+		.sample .table{
+			font-size: 14px;
+		}
+		.samples .clearfix > .table {
+			min-width: 200px;
+			text-align: center;
+		}
+		.samples .table .row{
+			float:left;
+			margin-left:10%;
+			margin-right:10px;
+			text-align: left;
+		}
+		.samples .table .row:nth-child(2){
+			float:right;
+			margin-right:10%;
+			margin-left:10px;
+			text-align: right;
+		}
+		.samples .table .cell{
+			padding:5px 10px 5px 15px;
+			font-size: 100%;
+		}
+		.samples .table .cells .cell{
+			float: left;
+		}
+		.samples .table .row> .cell:first-child{
+			font-weight: bold;
+		}
+		.samples .bold-text{
+			font-style: italic;
+			font-weight: bold;
+			font-size:120%;
+		}
+		.content-3{
+			background-color:  #e6e6e6;
+		}
+		.content-3 li{
+			width: 100%;
+			list-style-type: decimal;
+			list-style-position: inside;
+		}
+		.marked{
+			text-decoration: underline;
+			color:blue;
+		}
+		.content-4 .text-dec{
+			font-weight: bold;
+			font-style: italic;
+			display: inline-block;
+			font-size: 1.2em;
+		}
+		.content-4 .arrow{
+			width:350px; 
+			height:50px;
+			background:#FA4c27;
+			float:right;
+			font-family:'Racing Sans One', cursive;
+			font-size: 40px;
+			color:white;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		.content-4 .arrow:before{
+			border: 25px solid transparent;
+			border-right-color: #FA4c27;
+			content: "";
+			position: absolute;
+			right:350px;
+		}
+		.content-4 h1{
+			float: left;
+			clear:both;
+			color:#fff;
+		}
+		.content-4 h1:before{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			display: inline-block;
+			content: "";
+			vertical-align: middle;
+		}
+		.content-4 .pay:before, .content-4 .prod:before, .content-4 .ship:before{
+			background-color:#FA4c27;
+		}
+		.content-4 .pay:before{
+			margin:0px 20px 0 20px;
+			background-position: -22px -420px;
+		}
+		.content-4 .prod:before{
+			margin:0px 20px 0 20px;
+			background-position: -118px -425px;
+		}
+		.content-4 .ship:before{
+			margin:0px 20px 0 20px;
+			background-position: -218px -418px;
+		}
+		.content-4 .pay, .content-4 .prod{
+			padding:0 10px;
+		}
+		.content-4 .col:nth-child(2){
+			width: 350px;
+			float: left;
+			margin-left:2%;
+		}
+		.content-4 .col:last-child{
+			max-width: 500px;
+			min-width:  350px;
+			float: left;
+			padding:0 1%;
+		}
+		.content-4{
+			background-color: #3b3c3e;
+			color: #fff;
+		}
+		.content-4 .text-pad p{
+			text-indent: 30px;
+			padding:0 0px;
+			margin:0;
+
+		}
+		.content-4 .text-pad:before{
+			content: "";
+			display: block;
+			clear:both;
+		}
+		.content-4  .paypal{
+			width: 150px;
+			height: 57px;
+			margin: 20px 40px;
+			margin-bottom: 0;
+			background-position: -350px -30px;
+		}
+		.content-4 .table{
+			display: table;
+			overflow: auto;
+		}
+		.content-4 .row{
+			display: table-row;
+			padding-top:10px;
+			padding-left:15px;
+		}
+		.content-4 .row:nth-child(odd){
+			background: #696969;
+			padding-left: 0;
+		}
+		.content-4 .cell{
+			display: table-cell;
+			text-align: center;
+			padding:5px 10px;
+		}
+		.content-4 .cell:nth-child(2),.content-4 .cell:nth-child(3){
+			padding-left: 0;
+		}
+		.content-4 .table-capt{
+			padding-top: 20px;
+			display: table-caption;
+			text-align: center;	
+			font-weight: bold;
+		}
+		.content-4 .cell:first-child{
+			text-align: left;
+			white-space: pre;
+		}
+		.content-4 .logo-DHL{
+			width: 100px;
+			height: 22px;
+			display: inline-block;
+			background-position: -190px -30px;
+		}
+		.content-5{
+			padding: 0 0 20px 0;
+		}
+		.content-5 h1:before{
+			width: 15px;
+			height:100px;
+			background: #FA4c27;
+			content:"";
+			display: inline-block;
+			vertical-align: middle;
+			margin:0 25px 0 0;
+		}
+		.content-5 h1{
+			padding: 0;
+			margin: 0;
+		}
+		.content-5 .promo-steps .pic,.content-5 .promo-steps-1 .pic{
+			width: 100px;
+			height:100px;
+			border-radius: 50%;
+			display: inline-block;
+			vertical-align: middle;
+			text-align: center;
+			box-shadow: 0px 0px 0 10px #3b3c3e;
+			margin: 30px 0 80px 10%;
+			float:left;
+			text-indent: inherit;
+		}
+		.content-5 .promo-steps .pic:nth-child(1){
+			background-position: -10px -275px;
+		}
+		.content-5 .promo-steps .pic:nth-child(2){
+			background-position: -530px -268px;
+		}
+		.content-5 .promo-steps .pic:nth-child(3){
+			background-position: -670px -264px;
+		}
+		.content-5 .promo-steps .pic:nth-child(4){
+			background-position: -810px -283px;
+		}
+		.content-5 .promo-steps li{
+			font-family: 'Fjalla One', sans-serif;
+			font-size: 140%;
+			margin-top: 120px;
+			text-align: center;
+			list-style-position: inside;
+			margin-left: -10px;
+			width: 120px;
+		}
+		.content-7 ul{
+			font-size: 90%;
+			list-style-position: inside;
+		}
+		.content-7 ul,.content-3 ol{
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+		.content-8 .gallery{
+			height: 310px;
+		}
+		.content-8 .img{
+			background:#fff url('http://www.mediafire.com/convkey/acfa/jd8h6fmgysambapzg.jpg') no-repeat;
+			text-indent: -9999px;
+			height: 300px;
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 6px;
+		}
+		.content-8 .img:nth-child(1){
+			background-position: 0 0;
+			width: 450px;
+			margin-left: 0;	
+		}
+		.content-8 .img:nth-child(2){
+			background-position: -470px 0;
+			width: 450px;	
+		}
+		.content-8 .img:nth-child(3){
+			background-position: -940px 0;
+			width: 420px;	
+		}
+		.content-8 .img:nth-child(4){
+			background-position: -1380px 0;
+			width: 450px;	
+		}
+		.content-8 .img:nth-child(5){
+			background-position: -1850px 0;
+			width: 450px;	
+		}
+		.content-8 .img:nth-child(6){
+			background-position: -2320px 0;
+			width: 400px;
+		}
+		.fa-padding{
+			padding: 0px 10px;
+		}
+	</style>-->
+</head>
+<body>
+	<header>
+		<div class="drop-down-list_wrapper">
+			<p>Select lang</p>
+			<ul>
+				<li class="drop-down-list_lang"><a href="/engIndex.html">Eng</a></li>
+				<li class="drop-down-list_lang"><a href="/rus">Rus</a></li>
+			</ul>
+		</div>
+		<div class="center_logo">
+			<div class="logo-ico"></div>
+			<h1>Outdoor Decals</h1>
+		</div>
+	</header>
+	<div class="content-1">
+		<div class="logo-od"></div>
+		<div class="head-note">Please read over the item’s description, many questions may be answered by reading its description.</div>
+		<div class="promo">
+			<div class="promo-text color">7-23 mil</div>
+			<div class="promo-text color">Unique design</div>
+			<div class="promo-text color">3 years color life</div>
+		</div>
+		<div class="fixed-background">
+				<div class="gradient"></div>
+		</div>
+	</div>
+	<div class="content-2 content content-width">
+		<h1>Buy with confidence</h1>
+		<div class="padding"><p>Outdoor Decals™ graphics kits are made of medium and thick thickness vinyl, please, do not confuse with cheap, paper thin kits manufactured by several vehicle wrap and sign companies.<br>
+		Our graphics kits printed on high-quality films with exceptional adhesion to plastics produced by American and Italian manufacturers. <br>
+		Outdoor Decals graphics kits are custom made to order. In case if you want to change some graphics kit part or get completely unique design, please, see a topic below “<b class="b1">Unique design</b>” and "<a class="marked">Contact the seller</a>".</p></div>
+	</div>	
+	<div class="content-11 content content-width samples">
+		<h1>Approved templates</h1>
+		<div class="padding">		
+			<div class="clearfix">
+			<p>Every graphics kit template comes throught tough correction before being taking to design at. We create every graphics templates and try it on real bikes to get the best fit before being printed and sold. Our method of shape control helps us to provide the best fittings and gaps between plastics shapes and stickers.<br>
+			<div class="clearfix gallery .content-width">	
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+			</div>
+			<br>
+			We think about our clients wrapping skills and expirience that is why we provide the best sticker shape to be easy installed on plastic according to its stretching with and without preheating. Some stickers have special slits to make the application quick and facile.
+			</p>
+			</div>
+		</div>
+	</div>
+	<div class="samples content content-width"><h1>Film types</h1>
+		<div class="padding"><p> 3 different types of protective films make our graphics kits exceprional choice for your bike while adventures.</p></div>
+			<div class="clearfix">
+				<div class="table">
+					<div class="row">
+						<div class="cell">Shiny gloss</div>
+						<div class="cells">
+							<div class="cell">0,2 mm/ 7 mil</div>
+							<div class="cell bold-text">or</div>
+							<div class="cell">0,5 mm/ 20 mil</div>
+						</div>
+						<div class="cell"><div class="sample1 sample"></div></div>
+						<div class="cells">
+							<div class="cell">Film 0,2 mm/ 7 mils is applicable for light and soft riding. Does not fit for pro-riding and racing.<br>Film 0,5 mm/20 mils is applicable for hard enduro and cross racing</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="cell">Embossed gloss</div>
+						<div class="cell">0,6 mm/ 23 mil</div>
+						<div class="cell"><div class="sample2 sample"></div></div>
+						<div class="cells">
+							<div class="cell">Film 0,6 mm/23 mils is applicable for hard enduro and cross racing</div>
+						</div>
+					</div>
+					<div class="row"> Any of our kit film endures sand, water, mud, gasoline, oils and, of cause, high-pressure washer. <p class="note-text">See installation and user manual.</p></div>
+				</div>
+			</div>
+	</div>
+	<div class="content content-3 content-width"><h1>Unique design</h1>
+		<div class="padding"> 
+			<ol>
+				<li>Ask us using “<a class="marked">Ask a question</a>” then “<a class="marked">Contact the seller</a>”, order unique design and attach your bike photo.</li>
+				<li>Present another’s graphics kit which you prefer if you want alike design. In case if you don’t have kit prototype tell us your preferences, wanted logos (or text) and represent samples of separated style parts. We make graphics design extremely close to your expectations, but note: the more accurate and clearer your description is the more precise and complete design would be.</li>
+				<li>When design outline is shown, you may either accept it or make some corrections up to 3 times.</li>
+				<li>As design is finished and accepted we notify you and list the designed graphics kit in “Items for sale”.</li>
+				<li>Buy it as used to clicking “Buy it now”</li>
+			</ol>
+		</div>
+	</div>
+	<div class="content content-4 content-width">
+		<div class="clearfix">
+			<div class="arrow">Buy now!</div>
+			<div class="col">
+				<h1 class="pay">Payment</h1>
+				<div class="text-pad">
+					<div class="text-dec">PayPal</div> or <div class="text-dec">Ebay</div> money back guarentee.
+					<div class="paypal"></div>
+				</div>
+				<h1 class="prod">Production</h1>
+				<div class="text-pad"><p>Item production and handling takes up to 4 days starting from the next day after the sell. We notice you as your order is produced and ready to ship.</p></div>
+			</div>
+			<div class="col">
+				<h1 class="ship">Shipping</h1>
+				<div class="text-pad">
+					<p>Shipping cost listed at eBay listing is intended for reference purposes only. Customs fees, brokerage fees, taxes, or duties are the buyer's responsibility and are not included in the cost of shipping listed at item's listing. Item values will be stated as the amount paid for that item (excluding shipping). We cannot mark items as "gifts".</p>
+					<p>Economy shipping takes from 14 days up to 45 days.</p>
+					<p>DHL fast shipping takes 3-4 days.</p>
+					<p>Once the parcel is handled we send you its tracking number. </p>
+					<div class="table">
+						<div class="table-capt">Duration of shipping (days)</div>
+						<div class="row">
+							<div class="cell">Location</div>
+							<div class="cell">Fast delivery <div class="logo-DHL"></div></div>
+							<div class="cell">Economy delivery</div>
+						</div>
+						<div class="row">
+							<div class="cell">Europe</div>
+							<div class="cell">3-4</div>
+							<div class="cell">7-40</div>
+						</div>
+						<div class="row">
+							<div class="cell">North America</div>
+							<div class="cell">3-4</div>
+							<div class="cell">9-40</div>
+						</div>
+						<div class="row">
+							<div class="cell">Australia</div>
+							<div class="cell">3-4</div>
+							<div class="cell">12-40</div>
+						</div>
+						<div class="row">
+							<div class="cell">Asia</div>
+							<div class="cell">3-4</div>
+							<div class="cell">10-40</div>
+						</div>
+						<div class="row">
+							<div class="cell">South America</div>
+							<div class="cell">3-4</div>
+							<div class="cell">12-40</div>
+						</div>
+						<div class="row">
+							<div class="cell">Africa</div>
+							<div class="cell">3-4</div>
+							<div class="cell">12-40</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="content content-5 content-width">
+		<div class="clearfix">
+			<h1>Shopping steps</h1>
+			<div class="promo-steps">
+				<ol>
+					<div class="pic"><li>Add to card</li></div>
+					<div class="pic"><li>Pay with PayPal</li></div>
+					<div class="pic"><li>Wait kit shipping</li></div>
+					<div class="pic"><li>Enjoy your graphics kit</li></div>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="content content-3 content-6 content-width">
+		<h1>Questions & Concerns</h1>
+		<div class="padding">
+			<p>We attempt to answer all questions as soon as possible, usually within one business day. Questions during evenings or weekends may have a slight delay in response. Please read over the item’s description in its entirety, as many questions can be answered by reading the item’s description.</p><p>If you have any problems with your shipment or item please email us before leaving negative feedback. We do our best to provide quality products and making sure our customers are 100% satisfied.</p>
+		</div>
+	</div>
+	<div class="content content-2 content-7 content-width">
+		<h1>Notice</h1>
+		<div class="padding">
+			<ul>
+				<li>We don’t reproduce another’s design ”one and the same” due to Copyright. We may develop design and separated elements as closer as possible to the original (wanted) graphics kit.</li>
+				<li>The time spent on design development doesn’t come into printing/shipping time.</li>
+				<li>Graphics do not cover all plastic surfaces. Use of graphics is to visually enhance the look of your vehicle. Not intended to cover or hide entirely the color of your original plastics. </li>
+				<li>Design will be performed under non-exclusive right basis and will be added to Outdoor Decals graphics kits collection. </li>
+				<li> If you ordered a kit for the wrong model, design or color and want to exchange it with the correct one, if available, a 25% restocking fee is applied. </li>
+				<li> Exchange requests are reviewed on a per order basis and are subject to a 25% restocking fee. Used or open kits will not be accepted and cannot be returned.</li>
+				<li>For compatibility or if you are not sure what model you have please contact us before ordering. We are not held responsible when ordering the wrong product, color or design.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content-8 content-width content ">
+			<h1>Gallery</h1>
+			<div class="gallery content-width">
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+				<div class="img"></div>
+			</div>
+	</div>
+	<footer>
+		<div class="clearfix">
+			<h1>Outdoor Decals</h1>
+			<p class="copy-right">All rights reserved <br> 2016-2017</p>
+			<div class="contacts-main">
+				<p>Contact us:</p>
+				<div class="contacts-list">
+					<ul>
+						<li class="contacts-list_contacts"><a href="https://www.ebay.com/usr/outdoor_decals" target="_blank">
+							<i class="fa fa-shopping-bag fa-2x fa-padding">
+							</i>
+							Ebay store</a>
+						</li>
+						<li class="contacts-list_contacts mail_contact"><a href="mailto:outdoordecalsop@gmail.com"><i class="fa fa-google-plus fa-2x fa-padding"></i>Email: outdoordecalsop@gmail.com</a></li>
+						<li class="contacts-list_contacts skype_contact"><p><i class="fa fa-skype fa-2x fa-padding"></i>Skype: xixhelloweenxix</p></li>
+						<li class="contacts-list_contacts viber_contact"><p><i class="fa fa-whatsapp fa-2x fa-padding"></i>Viber: +380939462821</p></li>
+						<li class="contacts-list_contacts mobile_contact"><p><i class="fa fa-phone fa-2x fa-padding"></i>Phone: +380939462821</p></li>
+						<li class="contacts-list_contacts fb_contact"><a href="https://www.facebook.com/groups/222378341507978/"  target="_blank"><i class="fa fa-facebook fa-2x fa-padding"></i>Facebook</a></li>
+						<li class="contacts-list_contacts vk_contact"><a href="https://vk.com/OutdoorDecals"  target="_blank"><i class="fa fa-vk fa-2x fa-padding"></i>Vk</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
